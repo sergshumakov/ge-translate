@@ -1,3 +1,5 @@
+import env from '@/helpers/env'
+
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const axios = require('axios')
 
@@ -10,11 +12,11 @@ export default async function (
     {
       targetLanguageCode: targetLanguage,
       texts: text,
-      folderId: 'b1gk5psvihgupg93uirb',
+      folderId: env.YANDEX_FOLDER_ID,
     },
     {
       headers: {
-        Authorization: 'Api-Key AQVN32hmv_XXjk2Fi4BgBgUktDvNfcsjoZawomFW',
+        Authorization: 'Api-Key ' + env.YANDEX_TRANSLATE_KEY,
       },
     }
   )
