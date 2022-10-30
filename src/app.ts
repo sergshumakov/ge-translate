@@ -8,6 +8,7 @@ import attachUser from '@/middlewares/attachUser'
 import bot from '@/helpers/bot'
 import configureI18n from '@/middlewares/configureI18n'
 import handleLanguage from '@/handlers/language'
+import handleTranslate from '@/handlers/translate'
 import i18n from '@/helpers/i18n'
 import languageMenu from '@/menus/language'
 import sendHelp from '@/handlers/help'
@@ -28,8 +29,9 @@ async function runApp() {
     // Menus
     .use(languageMenu)
   // Commands
-  bot.command(['help', 'start'], sendHelp)
-  bot.command('language', handleLanguage)
+  bot.command(['language', 'start'], handleLanguage)
+  bot.command(['help'], sendHelp)
+  bot.on('message:text', handleTranslate)
   // Errors
   bot.catch(console.error)
   // Start bot

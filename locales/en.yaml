@@ -1,5 +1,10 @@
 name: English
 help: |
-  <b>This bot</b> allows you to see how Telegram bots can be built.
+  <b>Bot</b> knows how to translate Georgian text and transliteration (from SMS) into English.
+
+  Just send a message with the text and automatically get the translation.
 language: Please, select the language.
-language_selected: <b>This bot</b> now speaks English.
+language_selected: |
+  <b>This bot</b> now speaks English.
+
+  Any text you send will automatically be translated into English.
