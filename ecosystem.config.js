@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'ge-translater',
+      name: 'ge-translate',
       script: './dist/app.js',
     },
   ],
