@@ -1,10 +1,10 @@
-# Telegram bot starter based on [grammY](https://grammy.dev)
+# GE Translate based on [grammY](https://grammy.dev)
 
-Please, enjoy this starter template for Telegram bots based on [grammY](https://grammy.dev). It includes most common middlewares, MongoDB integration, language picker and internationalization and shows basic encapsulation techniques used by me.
+Translation of Georgian text and transliteration (from SMS) into Russian and English.
 
 # Installation and local launch
 
-1. Clone this repo: `git clone https://github.com/sergshumakov/ge-translater`
+1. Clone this repo: `git clone https://github.com/sergshumakov/ge-translate`
 2. Launch the [mongo database](https://www.mongodb.com/) locally
 3. Create `.env` with the environment variables listed below
 4. Run `yarn` in the root folder
@@ -16,6 +16,8 @@ And you should be good to go! Feel free to fork and submit pull requests. Thanks
 
 - `TOKEN` — Telegram bot token
 - `MONGO` — URL of the mongo database
+- `YANDEX_TRANSLATE_KEY` - Yandex API key
+- `YANDEX_FOLDER_ID` - Yandex folder id from cloud
 
 Also, please, consider looking at `.env.sample`.
 
